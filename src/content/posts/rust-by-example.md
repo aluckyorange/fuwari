@@ -1,7 +1,7 @@
 ---
-title: Rustlings
+title: Rust By Example
 published: 2025-09-27
-description: 'Learning record of Rustlings'
+description: 'Learning notes of Rust By Example'
 image: ''
 tags: [Rust]
 category: 'Example'
@@ -9,7 +9,7 @@ draft: false
 lang: ''
 ---
 
-::github{repo="rust-lang/rustlings"}
+::github{repo="rust-lang/rust-by-example"}
 
 # 1. Hello World
 
@@ -34,19 +34,19 @@ println!("3");
 
 常用的格式化方式：
 - `{}` 按顺序匹配参数列表：
-  ```rust
-  println!("first: {}, second: {}", "Alice", "Bob");
-  ```
+```rust
+println!("first: {}, second: {}", "Alice", "Bob");
+```
 - `{no}` 可以通过编号匹配列表中的参数
-  ```rust
-  println!("first: {0}, second: {1}, first: {0}", "Alice", "Bob");
-  ```
+```rust
+println!("first: {0}, second: {1}, first: {0}", "Alice", "Bob");
+```
 - `{name}` 可以通过变量名匹配列表中的参数
-  ```rust
-  println!("she: {woman}, he: {man}", 
-            woman = "Alice", 
-            man = "Bob");
-  ```
+```rust
+println!("she: {woman}, he: {man}", 
+          woman = "Alice", 
+          man = "Bob");
+```
 # 2. 原生类型
 
 标量类型：
@@ -63,14 +63,14 @@ println!("3");
 
 类型标注：
 - 常规标注：
-  ```rust
-  let logical: bool = true;
-  ```
+```rust
+let logical: bool = true;
+```
 - 后缀标注：
-  ```rust
-  let integer = 9i32;
-  ```
+```rust
+let integer = 9i32;
+```
 - 默认类型：
-  ```rust
-  let default_float = 3.14 // f64
-  ```
+```rust
+let default_float = 3.14 // f64
+```
